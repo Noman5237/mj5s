@@ -12,18 +12,31 @@ The script defines various functions to perform tasks on Git repositories. These
 *The function names that begins with underscores only executes once and other functions gets executed for all repositories.*
 
 *_service*: Filters and selects repositories based on provided arguments like only and except.
+
 *clone*: Clones Git repositories or updates them if they already exist.
+
 *fetch*: Fetches updates from remote repositories.
+
 *checkout*: Checks out a specific branch in each repository.
+
 *remote*: Configures or updates Git remotes.
+
 *merge*: Merges a specified branch in each repository.
+
 *pull*: Pulls changes from a remote branch.
+
 *tag*: Tags a specific branch in each repository.
+
 *push*: Pushes changes to a remote branch.
+
 *mvnw_permission*: Changes the executable permission for the mvnw script.
+
 *jar*: Cleans and builds a JAR file for each repository.
+
 *image*: Builds a Docker image for each repository.
+
 *_registry*: Logs in to a Docker registry using provided credentials.
+
 *image_push*: Pushes a Docker image to a registry.
 
 You can execute these functions in conjunction with various arguments to perform specific actions on the repositories.
