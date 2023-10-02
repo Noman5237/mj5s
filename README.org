@@ -5,6 +5,13 @@ mj5s.sh is a Bash script designed to automate various tasks related to managing 
 
 ** How does it work?
 *** Urls
+#+BEGIN_SRC shell
+__urls=(
+  git@github.com:Noman5237/repo-test-1.git
+  git@github.com:Noman5237/repo-test-2.git
+)
+#+END_SRC
+
 The __urls array stores the Git repository URLs that you want to manage using this script. You can add or modify repository URLs in this array to suit your needs.
 *** Functions
 The script defines various functions to perform tasks on Git repositories. These functions include:
