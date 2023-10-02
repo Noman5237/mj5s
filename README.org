@@ -3,6 +3,8 @@
 ** What is it?
 mj5s.sh is a Bash script designed to automate various tasks related to managing multiple Git repositories. It provides a set of functions to simplify tasks like cloning repositories, fetching updates, checking out branches, pushing changes, building JAR files, creating Docker images, and more.
 
+The best thing is you can extend the functionalities by adding your own custom functions, taking the advantages of builtin parsing and infrastructure automations.
+
 ** How does it work?
 *** Urls
 #+BEGIN_SRC shell
