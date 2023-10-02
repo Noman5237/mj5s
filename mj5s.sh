@@ -296,6 +296,16 @@ main() {
   capture_func_args
   copy_to_context_args
 
+	# if the current function is not _service
+	if [[ "${__args[$__args_i]}" != "_service" ]]; then
+		debug "adding _service to the arguments"
+		# insert _service at the __args_i index
+		__args=("${__args[@]:0:$__args_i}" "_service" "${__args[@]:$__args_i}")
+		debug "__args:" "${__args[@]}"
+	else
+		debug "skipping adding _service to the arguments"
+	fi
+
   # for each argument, check if it's a valid function
   for (( ; __args_i < ${#__args[@]}; )); do
     local arg="${__args[$__args_i]}"
